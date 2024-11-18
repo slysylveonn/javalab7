@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java lab 7</title>
 </head>
 <body>
     <h1>Javascript lab 7</h1>
-    
+    <br><Br>
+        <label for="name">Full name: </label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+        <label for="phone">Phone Number: </label>
+        <input type="tel" placeholder="xxx-xxx-xxxx" maxlength="12" id="phone" name="number" required>
+
+        <br>
+        <br>
+        
+        <label for="email">Email Address: </label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+        <fieldset>
+            <legend>(optional) Gender: </legend>
+            <label><input type="radio" name="gender" value="male">Male</label>
+            <br>
+            <label><input type="radio" name="gender" value="female">Female</label>
+            <br>
+            <label><input type="radio" name="gender" value="nb">Nonbinary</label>
+            <br>
+            <label><input type="radio" name="gender" value="other">Other</label>
+        </fieldset>
+        <br><br>
+        <label for="select">What gaming system do you prefer? </label>
+    <select name="select" id="select" required>
+        <option value="PC">PC</option>
+        <option value="Xbox">Xbox</option>
+        <option value="Playstation">Playstation</option>
+        <option value="Nintendo">Nintendo Switch</option>
+    </select>
+<br><br>
+<textarea name="textarea" id="info">Please enter in detail what gift you think you deserve for Christmas this year, and why.</textarea>
+<br><br>
+<label> <input type="checkbox" name="consent" id="consent" required>I consent to all my information being sold to Donald Trump</label>
+<br>
+<br>
+<button class="submit" type="submit" id="submit">Send</button>
 </body>
 </html>
