@@ -1,3 +1,14 @@
+var hoverDiv = document.getElementById('hoverDiv');
+hoverDiv.addEventListener('mouseenter', function() {
+    this.style.backgroundColor = 'white';
+});
+hoverDiv.addEventListener('mouseleave', function() {
+    this.style.backgroundColor = 'transparent';
+});
+
+
+
+
 let submit = document.getElementById("submit");
 let nameSaved = document.getElementById("name");
 let emailSaved = document.getElementById("email");
