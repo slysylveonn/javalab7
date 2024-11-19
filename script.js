@@ -2,7 +2,7 @@
 
 var hoverDiv = document.getElementById('hoverDiv');
 hoverDiv.addEventListener('mouseenter', function() {
-    this.style.backgroundColor = 'white';
+    this.style.backgroundColor = 'pink';
     hoverDiv.textContent = `Hover functions are fun!`;
 });
 hoverDiv.addEventListener('mouseleave', function() {
@@ -20,7 +20,7 @@ document.addEventListener('keydown', function(event) {
 //focus event
 let focusEvent = document.getElementById('focusField');
 focusEvent.addEventListener("focus", (event) => {
-    event.target.style.background = 'lightyellow';
+    event.target.style.background = 'pink';
     console.log(`Field in focus`);
 });
 let blurEvent = document.getElementById('focusField');
@@ -37,7 +37,7 @@ let list = document.getElementById('itemList');
 list.addEventListener('click', function(event) {
     if (event.target.className === 'dele') {
         alert('You selected ' + event.target.textContent +'!');
-        event.target.style.backgroundColor = 'white'; 
+        event.target.style.backgroundColor = 'pink'; 
     }
 });
 
