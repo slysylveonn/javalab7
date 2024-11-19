@@ -17,6 +17,15 @@ textarea {
     margin-top: auto;
 
 }
+section {
+    display: flex;
+    flex-direction: row;
+  }
+  .dele {
+    background-color: white;
+    color: black;
+  }
+  
 fieldset {
     border: none;
 }

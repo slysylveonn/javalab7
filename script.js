@@ -30,6 +30,17 @@ blurEvent.addEventListener("blur", (event) => {
 
 });
 
+// delegation event
+
+let list = document.getElementById('itemList');
+
+list.addEventListener('click', function(event) {
+    if (event.target.className === 'dele') {
+        alert('You selected ' + event.target.textContent +'!');
+        event.target.style.backgroundColor = 'white'; 
+    }
+});
+
 // form validation
 
 let submit = document.getElementById("submit");
